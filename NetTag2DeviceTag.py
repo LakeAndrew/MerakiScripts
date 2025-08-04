@@ -26,7 +26,7 @@ dashboard = meraki.DashboardAPI(API_KEY, print_console=False)
 # pprint(orgs_list)
 
 # I am setting Org ID based on my own network documentation
-organization_id = '965749'
+organization_id = '<your org ID>'
 
 # Get a list of all networks : Response object is a list of dictionaries
 networks_list = dashboard.organizations.getOrganizationNetworks(
