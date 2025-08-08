@@ -15,6 +15,8 @@ from pprint import pprint  # pprint makes printing lists and dictionaries pretti
 # MUST CREATE environment.env FILE WITH THE FOLLOWING VARIABLES #
 load_dotenv('environment.env')
 API_KEY = os.getenv('API_KEY')
+# I am setting Org ID based on my own network documentation
+organization_id = os.getenv('ORG_ID')
 
 # INITIALIZE DASHBOARD OBJECT
 dashboard = meraki.DashboardAPI(API_KEY, print_console=False)
@@ -25,8 +27,6 @@ dashboard = meraki.DashboardAPI(API_KEY, print_console=False)
 # orgs_list = dashboard.organizations.getOrganizations()
 # pprint(orgs_list)
 
-# I am setting Org ID based on my own network documentation
-organization_id = '<your org ID>'
 
 # Get a list of all networks : Response object is a list of dictionaries
 networks_list = dashboard.organizations.getOrganizationNetworks(
