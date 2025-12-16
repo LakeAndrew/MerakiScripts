@@ -16,11 +16,19 @@ This approach keeps your API keys out of your source code and makes your scripts
 
 ## Pip install requirements 
 pip install required libraries. Commonly used libraries are
-import meraki
-import os
-from datetime import datetime
-import json
-import pandas as pd
-import dotenv
+
+meraki
+
+os
+
+datetime
+
+json
+
+pandas as pd
+
+dotenv
+
 from dotenv import load_dotenv
-import openpyxl
+
+openpyxl
